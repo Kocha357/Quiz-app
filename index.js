@@ -16,7 +16,7 @@ fetch("questions.json")
     } return response.json();
 
 }).then(function(quizQuestions){
-    QUESTION_WRAPPER.innerHTML +=`<h2>${quizQuestions.quiz.q1.question}</h2>`
+    QUESTION_WRAPPER.innerHTML +=`<h4>${quizQuestions.quiz.q1.question}</h4>`
     
     for( let i = 0; i < quizQuestions.quiz.q1.options.length; i++){
         QUESTION_WRAPPER.innerHTML +=`
@@ -25,21 +25,21 @@ fetch("questions.json")
     }
     
     
-     QUESTION_WRAPPER.innerHTML +=`<h2>${quizQuestions.quiz.q2.question}</h2>`
+     QUESTION_WRAPPER.innerHTML +=`<h4>${quizQuestions.quiz.q2.question}</h4>`
     
     for( let i = 0; i < quizQuestions.quiz.q2.options.length; i++){
         QUESTION_WRAPPER.innerHTML +=`
       <input type="radio" name="answer2" class="answer2" value = "${quizQuestions.quiz.q2.options[i]}" />
         <label for="answer2" class="answerTwo">${quizQuestions.quiz.q2.options[i]}</label><br>`
     }
-     QUESTION_WRAPPER.innerHTML +=`<h2>${quizQuestions.quiz.q3.question}</h2>`
+     QUESTION_WRAPPER.innerHTML +=`<h4>${quizQuestions.quiz.q3.question}</h4>`
     
     for( let i = 0; i < quizQuestions.quiz.q3.options.length; i++){
         QUESTION_WRAPPER.innerHTML +=`
       <input type="radio" name="answer3" class="answer3" value = "${quizQuestions.quiz.q3.options[i]}" />
         <label for="answer3"class="answerThree" >${quizQuestions.quiz.q3.options[i]}</label><br>`
     }
-     QUESTION_WRAPPER.innerHTML +=`<h2>${quizQuestions.quiz.q4.question}</h2>`
+     QUESTION_WRAPPER.innerHTML +=`<h4>${quizQuestions.quiz.q4.question}</h4>`
     
     for( let i = 0; i < quizQuestions.quiz.q4.options.length; i++){
         QUESTION_WRAPPER.innerHTML +=`
